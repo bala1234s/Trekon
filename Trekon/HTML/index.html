@@ -1,0 +1,436 @@
+<!-- 
+    Description
+---------Home Page--------------
+Author name: BALA SANKAR S
+Start Date: 07/11/2023
+End Date: 15/11/2023
+Review Date:
+Review Completed:
+ -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="/CSS/style.css" />
+    
+    <title>Homepage</title>
+  </head>
+  <body>
+    <!-- ----------------------Home Page start---------------------------- -->
+    <header>
+      <h1>Homepage</h1>
+    </header>
+    <!-- ----------------------Nav Bar------------------------------ -->
+    <nav>
+      <div class="logo">
+        <div><i class="fa-solid fa-mountain-sun"></i></div>
+        <div><p>TREKON</p></div>
+      </div>
+      <div class="navbar">
+        <!-- creating navbar pages -->
+        <a href="../HTML/index.html"><div>HOME</div></a>
+        <a href="../HTML/ProductList.html"><div>PRODUCT</div></a>
+        <a href="../HTML/aboutus.html"><div>ABOUT US</div></a>
+        <a href="../HTML/contact.html"><div>CONTACT</div></a>
+      </div>
+      <!------------------------------ search bar ------------------------>
+      <div class="searchbar">
+        <input type="text" placeholder="search" />
+      </div>
+
+      <div class="search">
+        <div class="sec">
+          <i class="fa-solid fa-magnifying-glass" style="color: #000000"></i>
+        </div>
+        
+        <a href="../HTML/cart.html"><div class="cart">
+          <i class="fa-solid fa-cart-shopping" style="color: #000000"></i>
+        </div></a>
+        <div class="menu">
+          <i class="fa-solid fa-bars" style="color: #000000"></i>
+        </div>
+      </div>
+    </nav>
+
+    <!-- -------------------------nav bar end---------------------- -->
+
+    <!-- -------------------------image show----------------------- -->
+
+    <div class="sec1">
+      <div class="imgshow">
+        <img
+          src="../src/images/Goggles/Goggle1.png"
+          alt="Goggle image"
+          title="Goggle image"
+          id="productimg"
+        />
+        <div class="imgshowcon">
+          <div class="imgshowdet">
+            <p onclick="prev()" >PREV</p>
+            <h3 id="productname">Traveler Goggle</h3>
+            <p onclick="next()">NEXT</p>
+          </div>
+        </div>
+      </div>
+      <div class="shownow">
+        <div class="showcon">
+          <h1>
+            MOUNTAIN <br />
+            ADVENTURE
+          </h1>
+          <button>show now</button>
+        </div>
+      </div>
+    </div>
+    <!-- -------------------------image show end----------------------- -->
+    <!-- -------------------------snowboard show----------------------- -->
+    <div>
+      <div class="snowBoard">
+        <div>
+          <h1>
+            Let's find the perfect <br />
+            snowboard for you
+          </h1>
+        </div>
+        <div class="advance">
+          <h3>Advanced engineering</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione
+            possimus inventore tenetur atque. Amet totam, et asperiores,
+            necessitatibus accusantium nam dolorum nemo temporibus odio, atque
+            reiciendis exercitationem! Recusandae, nisi? Reprehenderit?
+          </p>
+        </div>
+      </div>
+      <div class="snowBoardShower">
+        <img
+          id="snowboardShow"
+          src="../src/images/snowboard/snow3.jpg"
+          alt="snowboard3"
+          title="snowboard3"
+          
+        />
+      </div>
+    </div>
+    <!-- -------------------------snowboard show end----------------------- -->
+
+    <!-- -------------------------product show----------------------- -->
+    <div class="produtsList">
+      <div class="product">
+        <img src="../src/images/Bags/bag1.png" alt="bag1" title="bag1" />
+        <div>
+          <p>HIKING</p>
+          <h3>BACK BAG</h3>
+          <h4>₹ 3000</h4>
+        </div>
+      </div>
+      <div class="product">
+        <img src="../src/images/Dress/dress1.png" alt="dress1" title="dress1" />
+        <div>
+          <p>HIKING</p>
+          <h3>Camping coat</h3>
+          <h4>₹ 2600</h4>
+        </div>
+      </div>
+      <div class="product">
+        <img
+          src="../src/images/Goggles/goggle2.png"
+          alt="goggle2"
+          title="goggle2"
+        />
+        <div>
+          <p>HIKING</p>
+          <h3>Cool Goggle</h3>
+          <h4>₹ 1000</h4>
+        </div>
+      </div>
+      <div class="product">
+        <img src="../src/images/Shoes/shoe1.png" alt="shoe1" title="shoe1" />
+        <div>
+          <p>HIKING</p>
+          <h3>Snow Boots</h3>
+          <h4>₹ 1500</h4>
+        </div>
+      </div>
+    </div>
+    <!-- -------------------------product show end----------------------- -->
+
+    <!-- -------------------------Members----------------------- -->
+    <div class="members">
+      <div onclick="memPrev()" id="changeMem">PREV</div>
+      <div class="membersDetails">
+        <img src="../src/images/Men/men1.jpg" alt="men1" title="men1" id="memberImg"/>
+        <h1 id="memberDetail">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+          Reprehenderit quibusdam aut laudantium ea at, corporis necessitatibus
+          nemo fugit nisi! Iusto asperiores quisquam iste reprehenderit tempora
+          debitis voluptate in aspernatur fugit?
+        </h1>
+        <p id="memberRole">INSTRUCTOR</p>
+        <h3 id="memberName">Mani</h3>
+      </div>
+      <div onclick="memNext()" id="changeMem">NEXT</div>
+    </div>
+    <!-- -------------------------Members end----------------------- -->
+
+    <!-- -------------------------Instructor----------------------- -->
+    <div class="instructor">
+      <div class="instructorImg"></div>
+      <div class="instructorDetails">
+        <div><h1>Extreme skiing and adrenaline rush tour instrutor</h1></div>
+        <div class="instructorCon">
+          <i class="fa-solid fa-mountain-sun" style="color: #ffffff"></i>
+          <h4>Pro insrtuctions</h4>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatum
+            dolorum quibusdam, reiciendis, sed laudantium id sit optio eum
+            nostrum vero velit atque. Animi sequi ipsam velit laborum hic
+            inventore labore.
+          </p>
+          <button>Read More</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- -------------------------Instructor end----------------------- -->
+
+    <!-- -------------------------Rush tour----------------------- -->
+    <div class="rushTour">
+      <div><h1>Extreme skiing and adrenaline rush tour</h1></div>
+
+      <div class="equipments">
+        <div class="allThings">
+          <div class="tourThings">
+            <i class="fa-solid fa-suitcase" style="color: #000000"></i>
+            <h3>Equipments</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate
+              eum quo quidem, fuga suscipit laborum numquam officiis dignissimos
+              omnis modi accusamus voluptatibus quos asperiores ad voluptates
+              esse ipsam minima. Qui!
+            </p>
+          </div>
+          <div class="tourThings">
+            <i class="fa-solid fa-person-biking" style="color: #000000"></i>
+            <h3>Trail difficult variety</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate
+              eum quo quidem, fuga suscipit laborum numquam officiis dignissimos
+              omnis modi accusamus voluptatibus quos asperiores ad voluptates
+              esse ipsam minima. Qui!
+            </p>
+          </div>
+        </div>
+        <div class="allThings">
+          <div class="tourThings">
+            <i class="fa-solid fa-suitcase-rolling" style="color: #000000"></i>
+            <h3>Pro instructions</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate
+              eum quo quidem, fuga suscipit laborum numquam officiis dignissimos
+              omnis modi accusamus voluptatibus quos asperiores ad voluptates
+              esse ipsam minima. Qui!
+            </p>
+          </div>
+          <div class="tourThings">
+            <i class="fa-solid fa-map-location-dot" style="color: #000000"></i>
+            <h3>Good Locations</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate
+              eum quo quidem, fuga suscipit laborum numquam officiis dignissimos
+              omnis modi accusamus voluptatibus quos asperiores ad voluptates
+              esse ipsam minima. Qui!
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- -------------------------Rush tour end----------------------- -->
+
+    <!-- -------------------------winter image----------------------- -->
+    <div class="winter">
+      <div class="winterImages">
+        <div class="winterImageDet">
+          <img src="../src/images/Bags/bag3.png" alt="bag3" title="bag3" />
+        </div>
+        <div><h2>Winter</h2></div>
+      </div>
+      <div class="winterImages">
+        <div class="winterImageDet">
+          <img
+            src="../src/images/Dress/dress1.png"
+            alt="dress1"
+            title="dress1"
+          />
+        </div>
+        <div><h2>Hiking</h2></div>
+      </div>
+      <div class="winterImages">
+        <div class="winterImageDet">
+          <img
+            src="../src/images/Goggles/goggle4.png"
+            alt="goggle4"
+            title="goggle4"
+          />
+        </div>
+        <div><h2>Cycling</h2></div>
+      </div>
+
+      <div class="winterImages">
+        <div class="winterImageDet">
+          <img src="../src/images/Bags/bag3.png" alt="bag3" title="bag3" />
+        </div>
+        <div><h2>Winter</h2></div>
+      </div>
+      <div class="winterImages">
+        <div class="winterImageDet">
+          <img
+            src="../src/images/Dress/dress1.png"
+            alt="dress1"
+            title="dress1"
+          />
+        </div>
+        <div><h2>Hiking</h2></div>
+      </div>
+      <div class="winterImages">
+        <div class="winterImageDet">
+          <img
+            src="../src/images/Goggles/goggle4.png"
+            alt="goggle4"
+            title="goggle4"
+          />
+        </div>
+        <div><h2>Cycling</h2></div>
+      </div>
+    </div>
+    <!-- -------------------------winter image end----------------------- -->
+    <!-- -------------------------offer----------------------- -->
+    <div class="offer">
+      <h1>Join our creators club and get 15% off!</h1>
+      <div class="sendMail">
+        <input type="text" placeholder="Your email" />
+        <button>SEND NOW</button>
+      </div>
+    </div>
+    <!-- -------------------------offer end----------------------- -->
+
+    <!-- -------------------------brands----------------------- -->
+    <div class="brands">
+      <div class="brand">
+        <img
+          src="../src/images/company/company1.png"
+          alt="company1"
+          title="company1"
+        />
+      </div>
+      <div class="brand">
+        <img
+          src="../src/images/company/company2.png"
+          alt="company2"
+          title="company2"
+        />
+      </div>
+      <div class="brand">
+        <img
+          src="../src/images/company/company3.png"
+          alt="company3"
+          title="company3"
+        />
+      </div>
+      <div class="brand">
+        <img
+          src="../src/images/company/company4.png"
+          alt="company4"
+          title="company4"
+        />
+      </div>
+      <div class="brand">
+        <img
+          src="../src/images/company/company5.png"
+          alt="company5"
+          title="company5"
+        />
+      </div>
+    </div>
+    <!-- -------------------------brands end----------------------- -->
+
+    <!-- -------------------------footer ----------------------- -->
+
+    <footer>
+      <div class="footers">
+        <div class="signin">
+          <!----------offer------------->
+
+          <div class="signOffer">
+            <h1>Sign up here for new events and offers</h1>
+            <div class="sendMail">
+              <input type="text" placeholder="Your email" />
+              <button>SEND NOW</button>
+            </div>
+            <div class="links">
+              <i class="fa-brands fa-twitter" style="color: #ffffff"></i>
+              <i class="fa-brands fa-instagram" style="color: #ffffff"></i>
+              <i class="fa-brands fa-facebook-f" style="color: #ffffff"></i>
+            </div>
+          </div>
+          <!-- contacts -->
+          <div class="contact">
+            <!-- Explore -->
+            <div class="explore">
+              <h4>Explore Activity</h4>
+              <p>HIKING</p>
+              <p>CYCLING</p>
+              <p>TREKKING</p>
+              <p>SNOW SPORTS</p>
+              <p>MOUNTAIN BIKING</p>
+              <p>RUNNING</p>
+            </div>
+
+            <!-- address -->
+            <div class="address">
+              <p>
+                Kallikottai, Sankari Main Rd, Sandaipet, Kondalampatti, Salem,
+                Tamil Nadu 636010.
+              </p>
+
+              <div>
+                <p>Tel : +91 7904925991</p>
+                <p>Tel : +91 6379623737</p>
+              </div>
+              <p>stackqueue2023@gmail.com</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr />
+      <div class="lastFooter">
+        <div class="footerLogo">
+          <div><i class="fa-solid fa-mountain-sun"></i></div>
+          <div><p>TREKON</p></div>
+        </div>
+        <div class="copyRights">
+          <i class="fa-solid fa-copyright" style="color: #ffffff"></i>
+          <p>stackqueue 2023</p>
+          <p>All Rights Reserved</p>
+        </div>
+      </div>
+    </footer>
+    <!-- -------------------------footer end----------------------- -->
+
+    <!-- ----------------------Home Page end---------------------------- -->
+
+
+
+    <script src="../JS/script.js"></script>
+  </body>
+</html>

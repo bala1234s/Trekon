@@ -1,0 +1,476 @@
+* {
+    margin: 0;
+    scroll-behavior: smooth;
+    box-sizing: border-box
+}
+
+@import url('https://fonts.googleapis.com/css2?family=RocknRoll+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mukta&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Condensed&display=swap');
+/* page heading fonts */
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap');
+/* page heading fonts ends */
+
+
+header h1 {
+    text-align: center;
+    font-family: 'Fira Sans', sans-serif;
+}
+
+.logo {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    font-weight: bold;
+    font-family: 'RocknRoll One', sans-serif;
+    cursor: pointer;
+
+}
+
+nav {
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    background-color: #fff;
+    z-index: 2;
+    border-bottom: 2px solid rgb(179, 179, 179);
+
+}
+
+.navbar {
+    display: flex;
+
+    gap: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    font-size: 13px;
+    align-items: center;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #000;
+}
+
+.navbar div:hover,a:hover {
+
+
+    background-color: black;
+    color: #fff;
+
+
+
+}
+
+.navbar div {
+    padding: 5px;
+    cursor: pointer;
+}
+
+.searchbar {
+    display: none;
+
+}
+
+.search {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    cursor: pointer;
+}
+
+/*-----------nav bar end----------  */
+
+/*-----------pagesLoc----------  */
+.pagesLoc {
+    display: flex;
+
+}
+
+.pagesLoc ul {
+    display: flex;
+    gap: 50px;
+}
+
+/*-----------pagesLoc end----------  */
+/*-----------All content----------  */
+.allCon {
+    margin: 5rem 8rem 10rem 8rem;
+    
+}
+
+
+/*-----------All content end----------  */
+
+
+/* -----------cart----------- */
+
+.cartTable{
+    margin: 4rem;
+}
+
+.cartTable table{
+    display: flex;
+    flex-direction: row;
+    gap: 300px;
+}
+.tableaName{
+    display: flex;
+    flex-direction: row;
+    
+    gap: 9rem;
+}
+.tableProduct {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 3rem;
+}
+
+/* ---------------products---------------- */
+
+.products{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+.products img{
+    height: 5rem;
+    width: 5rem;
+}
+
+/* ---------------products end---------- */
+
+.addCart {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    height: 3rem;
+    text-align: center;
+    background-color: #000;
+    border: none;
+    inline-size: 80px;
+    cursor: pointer;
+    gap: 10px;
+}
+
+
+/* ---------coupon----------- */
+.coupon{
+    display: flex;
+    flex-direction: row;
+
+}
+.coupon input{
+    border: none;
+    border-bottom: 2px solid #c0c0c0;
+    font-size: 20px;
+}
+.coupon button{
+    background-color: black;
+    color: #fff;
+    border: none;
+   
+    
+    font-weight: bold;
+
+}
+.coupon button:hover{
+    background-color:white;
+    color: #000;
+    border:2px solid #000;
+    
+    font-weight: bold;
+
+}
+
+
+.update {
+    background-color: black;
+    color: #fff;
+    border: none;
+
+    
+    font-weight: bold;
+
+}
+
+.update:hover {
+    background-color: white;
+    color: #000;
+    border: 2px solid #000;
+    
+    font-weight: bold;
+
+}
+
+
+/* ---------coupon end--------- */
+
+/* ---------submission-------- */
+.submission{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+/* ---------submission end------- */
+
+/* ------- */
+
+
+
+/* ------------cart end---------- */
+
+
+/* -------------total cart---------- */
+.totalCart{
+    border: 2px solid black;
+    width: 40%;
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
+}
+.totalCart button{
+    background-color: black;
+    color: #fff;
+    border: none;
+    block-size: 40px;
+    width: 50%;
+    font-weight: bold;
+
+}
+.totalCart table .subtotal{
+    border-bottom: 2px solid #060505;
+
+}
+
+
+/* -------------total cart end--------- */
+
+/* ----------Footer---------------- */
+footer {
+
+    background-color: black;
+
+}
+
+footer .footers {
+    margin-bottom: 50px;
+}
+
+footer .signin {
+    color: #fff;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-family: 'Heebo', sans-serif;
+    width: 100%;
+    padding-top: 10rem;
+
+
+
+
+
+
+}
+
+footer .signin input {
+    background-color: #000;
+}
+
+footer .sendMail {
+    display: flex;
+    flex-direction: row;
+    border-bottom: 1px solid gray;
+
+    justify-content: space-between;
+}
+
+footer .signOffer {
+    width: 20rem;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
+}
+
+footer .sendMail input {
+    border: none;
+    width: 15rem;
+}
+
+footer .sendMail button {
+    border: none;
+    background: none;
+    font-size: 10px;
+    font-family: 'Heebo', sans-serif;
+    cursor: pointer;
+
+}
+
+footer .signin button {
+    background-color: #000;
+    color: #fff;
+    cursor: pointer;
+}
+
+footer .contact {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+}
+
+footer .contact p {
+    font-size: 10px;
+    font-weight: bold;
+}
+
+footer .address {
+    width: 10rem;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    cursor: pointer;
+}
+
+footer .explore {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    cursor: pointer;
+}
+
+footer .links {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+
+footer .footerLogo {
+    color: #fff;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    font-weight: bold;
+    font-family: 'RocknRoll One', sans-serif;
+    cursor: pointer;
+}
+
+footer .copyRights {
+    display: flex;
+    gap: 10px;
+    color: #fff;
+    font-family: 'Heebo', sans-serif;
+}
+
+footer .lastFooter {
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+
+
+
+
+
+/* ----------Footer end---------------- */
+
+
+
+/* --------------Responsive-------------- */
+@media(max-width:500px){
+    * {
+            padding: 0;
+            margin: 0;
+            
+        }
+    .allCon{
+        margin: 2rem;
+    }
+
+    
+
+    nav {
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+        border-bottom: 2px solid rgb(179, 179, 179);
+        margin: 0;
+    }
+
+    .logo {
+        font-size: 12px;
+    }
+
+    .navbar {
+        display: none;
+
+    }
+
+    .searchbar {
+        display: block;
+
+
+    }
+
+    .sec {
+        display: none;
+    }
+
+    .searchbar input {
+        border: 1px solid gray;
+        padding: 10px;
+        border-radius: 30px;
+        /* border-color: gray; */
+
+
+
+    }
+
+
+    /* ------------pages location------------ */
+
+    .pagesLoc{
+        font-size: 10px;
+        gap: 30px;
+    }
+
+
+
+
+    /* ------------pages location end------------ */
+
+    /* ------------------footer--------------- */
+    footer .signin {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .lastFooter {
+        font-size: 10px;
+    }
+
+
+        /* ------------------footer end--------------- */
+
+}
+
+/* --------------Responsive end---------- */
